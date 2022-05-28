@@ -595,19 +595,81 @@
       </div>
     </footer>
     <!-- MODAL WINDOW -->
-  
-    <div data-modal class="backdrop is-hidden">
+
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button data-modal-close class="close-modal-btn">
           <svg width="11" height="11">
             <use href="./Images/sprite.svg#icon_cross"></use>
           </svg>
         </button>
+        <strong class="form-title"
+          >Оставьте свои данные, мы вам перезвоним</strong
+        >
+        <form>
+          <label class="modal-form-group">
+            <span class="form-modal-label">Имя</span>
+            <input
+              class="modal-form-input"
+              type="text"
+              name="user-name"
+              placeholder=" "
+            />
+            <svg class="modal-form-icon" width="12" height="12">
+              <use href="./Images/sprite.svg#icon_modal_man"></use>
+            </svg>
+          </label>
+
+          <label class="modal-form-group">
+            <span class="form-modal-label">Телефон</span>
+            <input
+              class="modal-form-input"
+              type="tel"
+              name="user-phone"
+              placeholder=" "
+            />
+            <svg class="modal-form-icon" width="13" height="13">
+              <use href="./Images/sprite.svg#icon_modal_phone"></use>
+            </svg>
+          </label>
+          <label class="modal-form-group">
+            <span class="form-modal-label">Почта</span>
+            <input
+              class="modal-form-input"
+              type="email"
+              name="user-mail"
+              placeholder=" "
+            />
+            <svg class="modal-form-icon" width="15" height="12">
+              <use href="./Images/sprite.svg#icon_modal_envelope"></use>
+            </svg>
+          </label>
+
+          <label class="modal-form-comment">
+            <span class="form-modal-label">Комментарий</span>
+            <textarea
+              class="textarea-input"
+              name="feedback"
+              placeholder="Введите текст"
+            ></textarea>
+          </label>
+
+          <label class="form-policy-group">
+            <input class="checkbox" type="checkbox" />
+            <span class="custom-checkbox-icon"> </span>
+            <span class="form-policy-description"
+              >Соглашаюсь с рассылкой и принимаю
+              <a class="form-policy-link" href="">Условия договора</a>
+            </span>
+          </label>
+        </form>
+
+        <button class="btn modal-btn submit-btn" type="submit">
+          Отправить
+        </button>
       </div>
     </div>
-  
-  
-  
+
     <script src="./js/modal.js"></script>
   </body>
 </html>
