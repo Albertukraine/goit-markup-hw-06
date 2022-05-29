@@ -786,7 +786,7 @@ img {
   height: 100vh;
 
   background-color: rgba(0, 0, 0, 0.1);
-  transition: opacity 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
@@ -794,10 +794,19 @@ img {
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
-  scale: 0%;
 
 }
 
+/* ANIMATION MODAL WINDOW */
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(1.1);
+  opacity: 0;
+}
+
+.backdrop .modal {
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+}
 
 
 .textarea-input {
@@ -841,7 +850,7 @@ img {
 
   padding: 40px;
 
-  transition: transform 300ms ease-in-out 200ms, opacity 300ms ease-in-out 200ms;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
 
 }
 
@@ -923,17 +932,6 @@ img {
 }
 .textarea-input {
   padding: 12px 16px;
-}
-
-/* ANIMATION MODAL WINDOW */
-.backdrop.is-hidden .modal {
-  transform: translate(-50%, -50%) scale(0.4);
-  opacity: 0;
-}
-
-.backdrop .modal {
-  transform: translate(-50%, -50%) scale(1);
-  opacity: 1;
 }
 
 
